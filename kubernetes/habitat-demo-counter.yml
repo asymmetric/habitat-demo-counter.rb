@@ -15,9 +15,9 @@ metadata:
 spec:
   selector:
     habitat-name: habitat-demo-counter
-  type: NodePort
+  type: LoadBalancer
   ports:
   - name: web
-    nodePort: 30999
+    targetPort: 8000
     port: 8000
     protocol: TCP
